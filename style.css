@@ -16,8 +16,13 @@
 body p{
     color: #96A2A8;
 }
+
 #container-head {
     background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
     height: 280px;
 }
 #img-head {
@@ -53,6 +58,7 @@ body p{
     margin-bottom: 10rem;
 }
 .text-one {
+    width: 100%;
     padding: 15px;
 }
 .space p {
