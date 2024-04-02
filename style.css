@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     padding: 0;
@@ -6,6 +6,7 @@
     box-sizing: border-box;
 
 }
+
 .bai-jamjuree-regular {
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 400;
@@ -25,7 +26,12 @@ body p{
 #button {
     margin-top: 50px;
     margin-bottom: 140px;
+    margin-right: 0;
 }
+.butao-center .b1 {
+    text-align: end;
+}
+
 
 .btn {
     border-radius: 25px;
@@ -72,9 +78,13 @@ body p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 65px;
     margin-bottom: 65px;
     padding: 15px 15px;
+}
+.container-logo img {
+    padding: 25px;
 }
 .logos-footer img{
     padding: 8px;
@@ -86,3 +96,60 @@ footer {
 .row-space {
     padding: 28px;
 }
+
+#img-query {
+    width: 80px;
+    height: 60px;
+    padding-left: 25px;
+}
+
+@media screen and (max-width: 375px) {
+    .container-logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-logo img {
+        padding: 25px;
+    }
+
+    .row-space {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .row-space div {
+        margin: 10px;
+    }
+
+   .butao-center  {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    
+
+   #img-query {
+    width: 50px;
+    height: 60px;
+    padding: 0px 0px 0px 0px;
+   }
+}
+
+@media screen and (max-width: 575px){
+    .col-sm-6 .btn {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .col-sm-6 {
+        padding: 15px;
+    }
+}
+
